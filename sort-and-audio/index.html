@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <button onclick="playSound(1)"> mick jenkins </button>
+    <button onclick="pauseTrack()">pause</button>
+    <img style="width:4rem;display:none;" id="pic" onclick="changePic()"
+      src="https://cdn.pixabay.com/photo/2020/01/08/03/56/man-4749237_1280.jpg" alt="">
+
+    <img style="width:4rem;" id="next-pic" onclick="changePic()"
+      src="https://cdn.pixabay.com/photo/2020/08/21/22/25/kimono-5507132_1280.jpg" alt="">
+  </div>
+
+  <button onmouseover="playSoundOnHover()">drake </button>
+</body>
+<script>
+  sound = new Audio()
+  const playSound = (value) => {
+    if (value == 1) {
+      sound.src = "sound/15. George Jeff.mp3";
+      sound.play()
+    }
+    if (value == 2) {
+      // sound = new Audio()
+      sound.src = "sound/08 CALL IT EVEN.mp3";
+      sound.play()
+    }
+  }
+  const pauseTrack = () => {
+    sound.pause()
+  }
+
+
+  const changePic = () => {
+    const picId = document.getElementById("pic")
+    const nextPic = document.getElementById("next-pic")
+    if (picId.style.display === "none") {
+      picId.style.display = "block";
+    } else {
+      picId.style.display = "none";
+    }
+
+    if (nextPic.style.display === "none") {
+      nextPic.style.display = "block";
+    } else {
+      nextPic.style.display = "none";
+    }
+
+
+  }
+  const playSoundOnHover = () => {
+    sound.src = "sound/08 CALL IT EVEN.mp3";
+    sound.play()
+    console.log("hover")
+  }
+
+</script>
+
+</html>
