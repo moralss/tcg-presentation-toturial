@@ -46,7 +46,6 @@ class Form extends React.Component {
           placeholder="enter name"
         />
         {this.state.names.map(name => <div>{name.name} </div>)}
-        {/* {this.state.name} */}
         <button onClick={() => this.displayName()}> display name </button>
         {this.state.displayName}
       </div>
