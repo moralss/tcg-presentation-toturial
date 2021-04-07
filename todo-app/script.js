@@ -1,4 +1,4 @@
-var todoList = ["thato"];
+var todoList = [];
 
 const updateDisplay = (todoList) => {
   let todoOutput = document.getElementById('todo-output');
@@ -7,16 +7,6 @@ const updateDisplay = (todoList) => {
     todoOutput.innerHTML += `<li onclick="deleteTodo(${i})"> todo name ${todoList[i]} </li>`
   }
 }
-
-for (var todo of todoList) {
-  console.log("show loop", todo)
-
-}
-
-for (var i in todoList) {
-  console.log("show loop index", i)
-}
-
 
 
 const addTodo = () => {
