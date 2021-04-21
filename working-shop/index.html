@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>work shop</title>
+</head>
+<body>
+  <div>
+    <input type="text" placeholder="name" id="name">
+    <input type="text" placeholder="surname" id="surname">
+    <input type="text" placeholder="what are you working on" id="task">
+    <button onclick="submit()">submit</button>
+  </div>
+  <div>
+    task to be edited
+    <input type="text" placeholder="" id="editTask">
+    <button onclick="saveEdit()">save edit</button>
+  </div>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Task Assigned</th>
+    </tr>
+    <tbody id="displayEmployees">
+    </tbody>
+  </table>
+  
+  <script src="main.js"></script>
+</body>
+</html>
