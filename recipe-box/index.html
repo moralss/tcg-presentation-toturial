@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>recipe box</title>
+  <script src="main.js"></script>
+</head>
+<body>
+   <h1>hello world </h1>
+   <div style="display: flex;">
+     <div>
+       <input type="text" placeholder="add recipe" id="recipeName">
+       <button onclick="addRecipe()"> add recipe </button>
+     </div>
+     <div>
+       <div id="recipeForIngredient"></div>
+       <input id="ingredientName" type="text" placeholder="add ingredient for recipe" >
+      <button onclick="addIngredient()"> add ingredient</button>
+      </div>
+      <div>
+        <input type="text" placeholder="edit ingredient" id="ingredientToBeEdited">
+        <button onclick="saveEditIngredient()"> save Edit </button>
+      </div>
+   </div>
+   <div id="output">
+   </div>
+   <div id="ingredientOutput">
+   </div>   
+</body>
+</html>
